@@ -1,0 +1,122 @@
+.pagina-detalle-prestamo {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pagina-detalle-prestamo__encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pagina-detalle-prestamo__estado {
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+}
+
+.pagina-detalle-prestamo__estado--error {
+  border-color: rgba(231, 76, 60, 0.4);
+  background: rgba(231, 76, 60, 0.08);
+}
+
+.pagina-detalle-prestamo__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.detalle-prestamo__panel {
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detalle-prestamo__encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.detalle-prestamo__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detalle-prestamo__fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detalle-prestamo__fila article {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1 1 160px;
+}
+
+.detalle-prestamo__nota {
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(30, 94, 255, 0.08);
+  border: 1px solid rgba(30, 94, 255, 0.2);
+}
+
+.detalle-prestamo__subseccion {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detalle-prestamo__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detalle-prestamo__item {
+  list-style: none;
+  border-radius: 12px;
+  border: 1px solid var(--color-borde);
+  background: #ffffff;
+  padding: 12px 14px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.detalle-prestamo__item:hover {
+  background: #f9fafc;
+  border-color: rgba(30, 94, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.detalle-prestamo__pago,
+.detalle-prestamo__evento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.detalle-prestamo__pago section,
+.detalle-prestamo__evento section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 140px;
+}

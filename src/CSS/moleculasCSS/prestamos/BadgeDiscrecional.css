@@ -1,0 +1,10 @@
+.badge-discrecional {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(86, 115, 255, 0.18);
+  color: #1e2d6b;
+}

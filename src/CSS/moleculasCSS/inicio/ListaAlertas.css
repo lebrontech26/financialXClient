@@ -1,0 +1,72 @@
+.lista-alertas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.lista-alertas__vacio {
+  padding: 16px 0;
+  color: #6b7380;
+}
+
+.alerta-card {
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-left-width: 6px;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.alerta-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.alerta-card__nivel {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--color-borde);
+  background: var(--color-superficie-suave);
+}
+
+.alerta-card__descripcion {
+  margin: 0;
+  color: #556079;
+  font-size: 14px;
+}
+
+.alerta-card__accion {
+  align-self: flex-start;
+  border: 1px solid var(--color-borde);
+  background: transparent;
+  color: var(--color-texto);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.alerta-card__accion:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.alerta-card[data-severidad='alta'] {
+  border-left-color: var(--color-peligro);
+}
+
+.alerta-card[data-severidad='media'] {
+  border-left-color: var(--color-alerta);
+}
+
+.alerta-card[data-severidad='baja'] {
+  border-left-color: var(--color-warning);
+}

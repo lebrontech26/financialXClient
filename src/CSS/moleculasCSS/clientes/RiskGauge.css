@@ -1,0 +1,30 @@
+.risk-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.risk-gauge__aguja {
+  stroke: #1f2a44;
+  stroke-width: 3;
+}
+
+.risk-gauge__centro {
+  fill: #1f2a44;
+}
+
+.risk-gauge__labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.risk-gauge__score {
+  font-weight: 700;
+  color: #1f2a44;
+}

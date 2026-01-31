@@ -1,0 +1,53 @@
+.pagina-lista-clientes {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.pagina-lista-clientes__encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagina-lista-clientes__encabezado h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.pagina-lista-clientes__encabezado p {
+  margin: 0;
+  color: #6b7380;
+}
+
+.pagina-lista-clientes__busqueda {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagina-lista-clientes__estado {
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  color: #6b7380;
+}
+
+.pagina-lista-clientes__estado--error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #b64a4a;
+}
+
+.pagina-lista-clientes__estado--error strong {
+  display: block;
+  color: #b64a4a;
+}
+
+.pagina-lista-clientes__estado--error span {
+  color: #8b5660;
+}

@@ -1,0 +1,25 @@
+.badge-estado-prestamo {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #eef2ff;
+  color: var(--color-texto);
+}
+
+.badge-estado-prestamo--activo {
+  background: rgba(39, 174, 96, 0.12);
+  color: #1f7a4c;
+}
+
+.badge-estado-prestamo--en-mora {
+  background: rgba(230, 126, 34, 0.16);
+  color: #b35b10;
+}
+
+.badge-estado-prestamo--garantia-ejecutada {
+  background: rgba(231, 76, 60, 0.16);
+  color: #b03a2e;
+}

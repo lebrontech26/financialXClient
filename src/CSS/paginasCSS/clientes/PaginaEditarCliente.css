@@ -1,0 +1,31 @@
+.pagina-editar-cliente {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pagina-editar-cliente h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.pagina-editar-cliente p {
+  margin: 0;
+  color: #6b7380;
+}
+
+.pagina-editar-cliente__error {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #f2c9c9;
+  background: #fff5f5;
+  color: #b64a4a;
+}
+
+.pagina-editar-cliente__error ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 12px;
+  color: #8b5660;
+}

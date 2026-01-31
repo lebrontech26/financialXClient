@@ -1,0 +1,290 @@
+.pagina-detalle-cliente {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pagina-detalle-cliente__encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pagina-detalle-cliente__encabezado h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.pagina-detalle-cliente__encabezado p {
+  margin: 0;
+  color: #6b7380;
+}
+
+.pagina-detalle-cliente__acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.pagina-detalle-cliente__estado {
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  color: #6b7380;
+}
+
+.pagina-detalle-cliente__estado--error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #b64a4a;
+}
+
+.pagina-detalle-cliente__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detalle-card {
+  background: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1 1 420px;
+}
+
+.detalle-card h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.detalle-card--full {
+  flex-basis: 100%;
+}
+
+.detalle-card__contenido {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.detalle-card__contenido article {
+  flex: 1 1 200px;
+}
+
+.detalle-card__contenido strong {
+  margin-right: 6px;
+  font-size: 13px;
+  color: #6b7380;
+}
+
+.detalle-card__contenido strong::after {
+  content: ':';
+}
+
+.detalle-card__contenido span {
+  font-size: 14px;
+  color: #1f2a44;
+}
+
+.detalle-card__acciones {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.detalle-financiera__principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .detalle-financiera__principal {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+.detalle-financiera__texto {
+  max-width: 420px;
+  color: #5f6b7a;
+  font-size: 14px;
+}
+
+.detalle-financiera__resumen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.detalle-financiera__resumen .resumen-card {
+  flex: 1 1 220px;
+}
+
+.resumen-card {
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 14px;
+  background: #f9fafc;
+}
+
+.resumen-card h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.resumen-card p {
+  margin: 0;
+  color: #6b7380;
+  font-size: 13px;
+}
+
+.resumen-card__badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  font-size: 11px;
+  border-radius: 999px;
+  background: #fff3cd;
+  color: #8a6d3b;
+}
+
+.resumen-card--danger {
+  border-color: #f5c6cb;
+  background: #fdf2f2;
+}
+
+.resumen-card--danger h3 {
+  color: #721c24;
+}
+
+.resumen-card--warning {
+  border-color: #ffeeba;
+  background: #fffbf0;
+}
+
+.resumen-card--warning h3 {
+  color: #856404;
+}
+
+.resumen-card--success {
+  border-color: #c3e6cb;
+  background: #f0fdf4;
+}
+
+.resumen-card--success h3 {
+  color: #155724;
+}
+
+.resumen-card--info {
+  border-color: #bee5eb;
+  background: #f0f9ff;
+}
+
+.resumen-card--info h3 {
+  color: #0c5460;
+}
+
+.detalle-financiera__alertas {
+  border: 1px solid #f0d9a8;
+  background: #fff9e6;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.detalle-financiera__alertas h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.detalle-financiera__alertas ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #8a6d3b;
+  font-size: 13px;
+}
+
+.historial-tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.historial-tabla th,
+.historial-tabla td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.historial-tabla__toggle {
+  border: none;
+  background: none;
+  color: var(--color-primario);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.historial-tabla__detalle td {
+  background: #f9fafc;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.historial-tabla__detalle ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.detalle-prestamos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detalle-prestamos__estado {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f9fafc;
+  border: 1px solid var(--color-borde);
+  color: #5f6b7a;
+}
+
+.detalle-prestamos__estado--error {
+  border-color: rgba(231, 76, 60, 0.4);
+  background: rgba(231, 76, 60, 0.08);
+  color: #b64a4a;
+}
+
+.detalle-prestamos__tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.detalle-prestamos__tabla th,
+.detalle-prestamos__tabla td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--color-borde);
+  text-align: left;
+}
+
+.detalle-prestamos__tipo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.detalle-prestamos__acciones {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

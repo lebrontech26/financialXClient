@@ -1,0 +1,103 @@
+.tarjeta-metrica {
+  --hover-color: rgba(30, 94, 255, 0.14);
+  background: var(--color-superficie);
+  border-radius: 18px;
+  padding: 18px 20px;
+  border: 1px solid var(--color-borde);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 130px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-metrica::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--hover-color), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.tarjeta-metrica:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+}
+
+.tarjeta-metrica:hover::after {
+  opacity: 1;
+}
+
+.tarjeta-metrica__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #5c6b84;
+}
+
+.tarjeta-metrica__icono {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-superficie-suave);
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+.tarjeta-metrica__titulo {
+  font-size: 14px;
+}
+
+.tarjeta-metrica__valor {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-secundario);
+}
+
+.tarjeta-metrica__detalle {
+  font-size: 13px;
+  color: #6b7380;
+}
+
+.tarjeta-metrica[data-tone='neutro'] {
+  --hover-color: rgba(30, 94, 255, 0.18);
+}
+
+.tarjeta-metrica[data-tone='positivo'] {
+  --hover-color: rgba(39, 174, 96, 0.18);
+  border-color: rgba(39, 174, 96, 0.4);
+}
+
+.tarjeta-metrica[data-tone='positivo'] .tarjeta-metrica__icono {
+  background: rgba(39, 174, 96, 0.15);
+  color: var(--color-exito);
+}
+
+.tarjeta-metrica[data-tone='critico'] {
+  --hover-color: rgba(231, 76, 60, 0.2);
+  border-color: rgba(231, 76, 60, 0.4);
+}
+
+.tarjeta-metrica[data-tone='critico'] .tarjeta-metrica__icono {
+  background: rgba(231, 76, 60, 0.15);
+  color: var(--color-peligro);
+}
+
+.tarjeta-metrica[data-tone='alerta'] {
+  --hover-color: rgba(230, 126, 34, 0.2);
+  border-color: rgba(230, 126, 34, 0.4);
+}
+
+.tarjeta-metrica[data-tone='alerta'] .tarjeta-metrica__icono {
+  background: rgba(230, 126, 34, 0.15);
+  color: var(--color-alerta);
+}

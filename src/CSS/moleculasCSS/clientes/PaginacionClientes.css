@@ -1,0 +1,12 @@
+.paginacion-clientes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 0 6px;
+}
+
+.paginacion-clientes__info {
+  font-size: 13px;
+  color: #6b7380;
+}

@@ -1,0 +1,26 @@
+.buscador-clientes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  padding: 6px 12px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.buscador-clientes__label {
+  font-size: 12px;
+  color: #6b7380;
+}
+
+.buscador-clientes .input-texto {
+  border: none;
+  padding: 6px 0;
+  box-shadow: none;
+}
+
+.buscador-clientes .input-texto:focus {
+  box-shadow: none;
+}

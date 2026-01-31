@@ -1,0 +1,38 @@
+.pagina-crear-cliente {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pagina-crear-cliente h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.pagina-crear-cliente p {
+  margin: 0;
+  color: #6b7380;
+}
+
+.pagina-crear-cliente__error {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #f2c9c9;
+  background: #fff5f5;
+  color: #b64a4a;
+}
+
+.pagina-crear-cliente__error pre {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #8b5660;
+  white-space: pre-wrap;
+}
+
+.pagina-crear-cliente__error ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 12px;
+  color: #8b5660;
+}

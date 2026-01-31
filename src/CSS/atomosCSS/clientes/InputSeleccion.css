@@ -1,0 +1,20 @@
+.input-seleccion {
+  width: 100%;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  background: #ffffff;
+  color: var(--color-texto);
+  outline: none;
+}
+
+.input-seleccion:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 2px rgba(30, 94, 255, 0.15);
+}
+
+.input-seleccion:disabled {
+  background: #f6f7fb;
+  color: #9aa4b2;
+}

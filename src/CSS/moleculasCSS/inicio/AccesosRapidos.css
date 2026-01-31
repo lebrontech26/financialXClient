@@ -1,0 +1,48 @@
+.accesos-rapidos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.acceso-card {
+  border-radius: 16px;
+  border: 1px solid var(--color-borde);
+  background: var(--color-superficie);
+  padding: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.acceso-card:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.acceso-card:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.acceso-card__titulo {
+  font-weight: 700;
+  color: var(--color-secundario);
+}
+
+.acceso-card__descripcion {
+  font-size: 13px;
+  color: #6b7380;
+}
+
+.acceso-card__estado {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-primario);
+}
+
+.acceso-card:disabled .acceso-card__estado {
+  color: #7b8496;
+}

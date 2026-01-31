@@ -1,0 +1,132 @@
+.pagina-crear-prestamo {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pagina-crear-prestamo__encabezado {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pagina-crear-prestamo__pasos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.paso {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #f4f6fb;
+  border: 1px solid transparent;
+}
+
+.paso small {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3e8f5;
+  font-weight: 600;
+}
+
+.paso--activo {
+  border-color: rgba(30, 94, 255, 0.35);
+  background: rgba(30, 94, 255, 0.1);
+}
+
+.paso-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.paso-contenido__panel {
+  border: 1px solid var(--color-borde);
+  border-radius: 16px;
+  background: var(--color-superficie);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.paso-contenido__estado {
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+}
+
+.paso-contenido__estado--error {
+  border-color: rgba(231, 76, 60, 0.4);
+  background: rgba(231, 76, 60, 0.08);
+}
+
+.paso-contenido__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.resumen-cliente {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.resumen-cliente article {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+
+.resumen-prestamo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.resumen-prestamo article {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+}
+
+.resumen-prestamo__garantia {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.resumen-prestamo__garantia article {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.resumen-prestamo__condiciones {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.resumen-prestamo__confirmacion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}

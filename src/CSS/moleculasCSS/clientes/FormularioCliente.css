@@ -1,0 +1,51 @@
+.formulario-cliente {
+  background: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario-cliente__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.formulario-cliente__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario-cliente__campo label {
+  font-size: 13px;
+  color: #5f6b7a;
+  font-weight: 600;
+}
+
+.formulario-cliente__error {
+  min-height: 16px;
+  font-size: 12px;
+  color: #c0392b;
+}
+
+.formulario-cliente__acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.formulario-cliente__estado {
+  font-size: 13px;
+  color: #6b7380;
+}
+
+.formulario-cliente__botones {
+  display: flex;
+  gap: 12px;
+}

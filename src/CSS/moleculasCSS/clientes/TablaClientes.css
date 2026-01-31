@@ -1,0 +1,35 @@
+.tabla-clientes {
+  background: #ffffff;
+  border: 1px solid var(--color-borde);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabla-clientes table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-clientes thead {
+  background: #f6f7fb;
+  color: #6b7380;
+  text-align: left;
+}
+
+.tabla-clientes th,
+.tabla-clientes td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-borde);
+  font-size: 14px;
+}
+
+.tabla-clientes__acciones {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tabla-clientes__score {
+  font-weight: 700;
+}

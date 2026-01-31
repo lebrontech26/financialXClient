@@ -1,0 +1,42 @@
+.dialogo-confirmacion {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.dialogo-confirmacion__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.dialogo-confirmacion__contenido {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  width: min(90vw, 420px);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.2);
+}
+
+.dialogo-confirmacion__contenido h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.dialogo-confirmacion__contenido p {
+  margin: 0 0 20px;
+  color: #5f6b7a;
+}
+
+.dialogo-confirmacion__acciones {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}

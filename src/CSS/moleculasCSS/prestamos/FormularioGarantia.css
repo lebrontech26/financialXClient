@@ -1,0 +1,35 @@
+.formulario-garantia {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formulario-garantia__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formulario-garantia__campo label {
+  font-size: 13px;
+  color: #5f6b7a;
+  font-weight: 600;
+}
+
+.formulario-garantia__error {
+  min-height: 16px;
+  font-size: 12px;
+  color: #c0392b;
+}
+
+.formulario-garantia__archivo {
+  border: 1px dashed var(--color-borde);
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafbff;
+}
+
+.formulario-garantia__archivo-lista {
+  font-size: 12px;
+  color: #6b7380;
+}

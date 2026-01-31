@@ -1,0 +1,72 @@
+.boton {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 14px;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease, border 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  transform: translateY(0);
+}
+
+.boton--primario {
+  background: linear-gradient(180deg, #2f72ff 0%, #1e5eff 100%);
+  color: #ffffff;
+  box-shadow: 0 12px 22px rgba(30, 94, 255, 0.36);
+}
+
+.boton--secundario {
+  background: #f6f9ff;
+  color: var(--color-texto);
+  border-color: var(--color-borde);
+}
+
+.boton--peligro {
+  background: #ffffff;
+  color: var(--color-peligro);
+  border-color: #f2c9c9;
+  box-shadow: 0 10px 18px rgba(231, 76, 60, 0.18);
+}
+
+.boton--sm {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.boton--md {
+  font-size: 14px;
+}
+
+.boton--lg {
+  padding: 10px 18px;
+  font-size: 15px;
+}
+
+.boton:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.boton:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18);
+}
+
+.boton--primario:not(:disabled):hover {
+  box-shadow: 0 16px 32px rgba(30, 94, 255, 0.42);
+}
+
+.boton--peligro:not(:disabled):hover {
+  box-shadow: 0 16px 28px rgba(231, 76, 60, 0.26);
+}
+
+.boton:not(:disabled):active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.16);
+}
+
+.boton:focus-visible {
+  outline: 2px solid rgba(30, 94, 255, 0.4);
+  outline-offset: 2px;
+}

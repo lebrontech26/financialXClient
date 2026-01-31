@@ -1,0 +1,35 @@
+.badge-categoria {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-texto);
+}
+
+.badge-categoria__punto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #9aa4b2;
+}
+
+.badge-categoria--1 .badge-categoria__punto {
+  background: var(--color-exito);
+}
+
+.badge-categoria--2 .badge-categoria__punto {
+  background: #7bd389;
+}
+
+.badge-categoria--3 .badge-categoria__punto {
+  background: var(--color-warning);
+}
+
+.badge-categoria--4 .badge-categoria__punto {
+  background: var(--color-alerta);
+}
+
+.badge-categoria--5 .badge-categoria__punto {
+  background: var(--color-peligro);
+}

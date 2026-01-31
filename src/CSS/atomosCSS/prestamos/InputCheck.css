@@ -1,0 +1,9 @@
+.input-check-prestamo {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primario);
+}
+
+.input-check-prestamo:disabled {
+  opacity: 0.6;
+}
