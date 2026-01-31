@@ -1,7 +1,7 @@
 import { obtenerDashboardMock } from '../datos/dashboardMock.js';
-import { manejarRespuesta, usarMocks } from './httpUtils.js';
+import { API_URL, manejarRespuesta, usarMocks } from './httpUtils.js';
 
-let RUTA_BASE = '/api/dashboard/inicio';
+let RUTA_BASE = API_URL + '/api/dashboard/inicio';
 
 // Solicita el resumen general del dashboard de Inicio.
 async function obtenerDashboard(signal) {

@@ -1,5 +1,7 @@
 // Helpers compartidos para consumir APIs y normalizar respuestas.
 
+const API_URL = import.meta.env.VITE_API_URL || '';
+
 // Determina si el modo demo con datos mock esta activado.
 function usarMocks() {
   if (typeof globalThis !== 'undefined' && globalThis.__VITE_USAR_MOCKS__ === true) {
@@ -100,4 +102,4 @@ async function normalizarError(respuesta) {
   };
 }
 
-export { usarMocks, manejarRespuesta };
+export { API_URL, usarMocks, manejarRespuesta };

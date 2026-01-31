@@ -8,9 +8,9 @@ import {
   registrarPagoMock,
   ejecutarGarantiaMock
 } from '../datos/prestamosMock.js';
-import { manejarRespuesta, usarMocks } from './httpUtils.js';
+import { API_URL, manejarRespuesta, usarMocks } from './httpUtils.js';
 
-let RUTA_BASE = '/api/prestamos';
+let RUTA_BASE = API_URL + '/api/prestamos';
 
 // Solicita el listado paginado de prestamos con filtros opcionales.
 async function obtenerPrestamos(parametros, signal) {

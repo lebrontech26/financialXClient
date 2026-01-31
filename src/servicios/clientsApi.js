@@ -1,6 +1,6 @@
-import { manejarRespuesta } from './httpUtils.js';
+import { API_URL, manejarRespuesta } from './httpUtils.js';
 
-let RUTA_BASE = '/api/Client';
+let RUTA_BASE = API_URL + '/api/Client';
 
 // Solicita la lista paginada de clientes segun pagina, tamano y filtro de busqueda.
 async function obtenerClientes(parametros, signal) {
