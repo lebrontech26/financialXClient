@@ -1,20 +1,9 @@
 import { obtenerDashboardMock } from '../datos/dashboardMock.js';
-import { API_URL, manejarRespuesta, usarMocks } from './httpUtils.js';
-
-let RUTA_BASE = API_URL + '/api/dashboard/inicio';
 
 // Solicita el resumen general del dashboard de Inicio.
+// Usa datos mock mientras el backend no implemente /api/dashboard/inicio.
 async function obtenerDashboard(signal) {
-  if (usarMocks()) {
-    return await obtenerDashboardMock(signal);
-  }
-
-  let respuesta = await fetch(RUTA_BASE, {
-    method: 'GET',
-    signal: signal
-  });
-
-  return await manejarRespuesta(respuesta);
+  return await obtenerDashboardMock(signal);
 }
 
 export { obtenerDashboard };
